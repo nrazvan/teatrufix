@@ -40,11 +40,11 @@
 				</nav>
 			</header>
 			<div class="inner-header">
-				<a id="logo-link" href="<?php home_url(); ?>"><div id="logo"></div></a>
+				<a id="logo" href="<?php home_url(); ?>"></a>
 				<div id="header-widget-area">
 					<?php if ( dynamic_sidebar('sidebar2') ) : else : ?>
 					<?php endif; ?>
 				</div>
 			</div>
-			
+
 		<div class="main-content">	

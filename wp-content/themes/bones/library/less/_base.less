@@ -62,11 +62,6 @@ img {
 	.micro();
 	.text-center();
 }
-.inner-header {
-	float: none!important;
-	margin: auto auto!important;
-	max-width: 781px;
-}
 .homepage-category-title {
 	display: block;
 	width: 92px;
@@ -89,11 +84,6 @@ img {
 }
 .most-recent-ribbon2 {
 	display:none;
-}
-#slideshow {
-	min-height: 410px;
-	display: block;
-	.slideshow();
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -224,14 +214,25 @@ h5, .h5 {
 *********************/
 
 .top-header {
-	min-height:44px;
-	background: url('../images/background/menu-bg.png');
+	min-height: 44px;
+	height: auto;
+	background:  #1b1b1b url('../images/background/menu-bg.png') repeat-x bottom center;
 	position: fixed;
 	width: 100%;
 	z-index:1000;
 	top:-2px;
 	right:0;
 	left: 0;
+	float: none;
+}
+	
+.inner-header {
+	margin: auto auto;
+	min-height: 130px;
+	max-width: 781px;
+	max-height:200px;
+	margin: auto auto;
+	top: 0px;
 }
 	#logo {
 		display:block;

@@ -99,7 +99,7 @@ BACKGROuNDS
   float: right;
   position: absolute;
   z-index: 10;
-  right: 24px;
+  right: 21px;
   top: -8px;
 }
 .ribbon2 {
@@ -344,8 +344,8 @@ NAVIGATION STYLES
 *********************/
 img {
   display: inline-block;
+  width: 48%;
   float: left;
-  width: 50%;
 }
 /* .menu is clearfixed inside mixins.scss */
 .menu {
@@ -523,7 +523,7 @@ body {
 }
 img {
   display: inline-block;
-  float: left;
+  float: none!important;
   width: auto;
 }
 img {
@@ -556,7 +556,7 @@ img:hover {
   float: right;
   position: absolute;
   z-index: 10;
-  right: 24px;
+  right: 21px;
   top: -8px;
 }
 .most-recent-ribbon2 {
@@ -569,6 +569,11 @@ img:hover {
   z-index: 10;
   right: -8px;
   top: -8px;
+}
+#slideshow {
+  min-height: 410px;
+  display: block;
+  background: url('../images/background/slide.png') center bottom no-repeat;
 }
 /*********************
 LAYOUT & GRID STYLES

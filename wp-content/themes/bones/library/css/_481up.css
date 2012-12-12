@@ -20,8 +20,8 @@ NAVIGATION STYLES
 *********************/
 img {
   display: inline-block;
+  width: 48%;
   float: left;
-  width: 50%;
 }
 /* .menu is clearfixed inside mixins.scss */
 .menu {

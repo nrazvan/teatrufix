@@ -576,7 +576,7 @@ BACKGROuNDS
   float: right;
   position: absolute;
   z-index: 10;
-  right: 24px;
+  right: 21px;
   top: -8px;
 }
 .ribbon2 {
@@ -867,11 +867,6 @@ img {
   font-size: 10px;
   text-align: center;
 }
-.inner-header {
-  float: none!important;
-  margin: auto auto!important;
-  max-width: 781px;
-}
 .homepage-category-title {
   display: block;
   width: 92px;
@@ -894,11 +889,6 @@ img {
 }
 .most-recent-ribbon2 {
   display: none;
-}
-#slideshow {
-  min-height: 410px;
-  display: block;
-  background: url('../images/background/slide.png') center bottom no-repeat;
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -1043,13 +1033,23 @@ h5,
 *********************/
 .top-header {
   min-height: 44px;
-  background: url('../images/background/menu-bg.png');
+  height: auto;
+  background: #1b1b1b url('../images/background/menu-bg.png') repeat-x bottom center;
   position: fixed;
   width: 100%;
   z-index: 1000;
   top: -2px;
   right: 0;
   left: 0;
+  float: none;
+}
+.inner-header {
+  margin: auto auto;
+  min-height: 130px;
+  max-width: 781px;
+  max-height: 200px;
+  margin: auto auto;
+  top: 0px;
 }
 #logo {
   display: block;
@@ -1502,8 +1502,8 @@ tweeners.
   *********************/
   img {
     display: inline-block;
+    width: 48%;
     float: left;
-    width: 50%;
   }
   /* .menu is clearfixed inside mixins.scss */
   .menu {
@@ -1688,7 +1688,7 @@ you can add resource intensive styles.
   }
   img {
     display: inline-block;
-    float: left;
+    float: none!important;
     width: auto;
   }
   img {
@@ -1721,7 +1721,7 @@ you can add resource intensive styles.
     float: right;
     position: absolute;
     z-index: 10;
-    right: 24px;
+    right: 21px;
     top: -8px;
   }
   .most-recent-ribbon2 {
@@ -1734,6 +1734,11 @@ you can add resource intensive styles.
     z-index: 10;
     right: -8px;
     top: -8px;
+  }
+  #slideshow {
+    min-height: 410px;
+    display: block;
+    background: url('../images/background/slide.png') center bottom no-repeat;
   }
   /*********************
   LAYOUT & GRID STYLES
