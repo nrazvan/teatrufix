@@ -10,7 +10,7 @@
 							<div id="ps_albums">
 								<?php query_posts('category_name=uncategorized&showposts=1');
 								if(have_posts()) : the_post(); ?>
-								<div class="ps_album" style="opacity:0;"><img src="<? the_post_thumbnail( 'bones-thumb-465' ); ?>" alt=""/><div class="ps_desc"><? the_excerpt(); endif; ?></span></div></div>
+								<div class="ps_album" style="opacity:0;"><img src="<?php the_post_thumbnail( 'bones-thumb-465' ); ?>" alt=""/><div class="ps_desc"><?php the_excerpt(); endif; ?></span></div></div>
 								<div class="ps_album" style="opacity:0;"><img src="albums/album2/thumb/thumb.jpg" alt=""/><div class="ps_desc"><h2>Lovely Dreams</h2><span>Abundantly fowl of you'll fly moved i evening there whales creeping very kind green. Of have after lights saying.</span></div></div>
 								<div class="ps_album" style="opacity:0;"><img src="albums/album3/thumb/thumb.jpg" alt=""/><div class="ps_desc"><h2>Insane Art</h2><span>Also female divide fruitful wherein upon, fruitful great fourth likeness given subdue cattle deep abundantly set place night stars fill.</span></div></div>
 							</div>	
@@ -31,21 +31,22 @@
 							 					case 0: ?>
 							 						<div class="main-recent-post fivecol">
 							 							<span class="most-recent-ribbon"></span>
-							 							 <? the_post_thumbnail( 'bones-thumb-465' ); ?>
+							 							 <?php the_post_thumbnail( 'bones-thumb-465' ); ?>
 							 						</div>
-							 					<? 	break;
+							 					<?php 	break;
 							 					   	case 1: ?>
 							 					   	<div class="second-recent-post sevencol">
-							 					   		<? 	the_post_thumbnail( 'bones-thumb-280'); ?>
-							 					   		<a href="<? the_permalink() ?>"><? the_title() ?> </a>
-							 					   		<div class="excerpt-overlay"><? the_excerpt() ?></div>
+							 					   		<?php 	the_post_thumbnail( 'bones-thumb-280'); ?>
+							 					   		<a href="<?php the_permalink() ?>"><?php the_title() ?> </a>
+							 					   		<div class="excerpt-overlay"><?php the_excerpt() ?></div>
 							 					   	</div>
-							 					<?	break;
+							 					<?php	break;
 							 						default: printf('default state');
 							 				}
 							 			$i++;
 							 		endwhile;
-							 	else: ?><div class="alert-error"><? printf('This category has no posts.'); ?></div> <?
+							 	else: ?><div class="alert-error"><?php printf('This category has no posts.'); ?></div> 
+							 <?php
 							 	endif;
 							?>
 						</div>
@@ -66,14 +67,14 @@
 												case 4:
 												case 5: ?>
 													<div class="gallery-recent-post fourcol">
-														<a href="<? the_permalink();?>" class="gallery-post-image"><?the_post_thumbnail('bones-thumb-250'); ?></a>
+														<a href="<?php the_permalink();?>" class="gallery-post-image"><?php the_post_thumbnail('bones-thumb-250'); ?></a>
 													</div>						
-												<?	break;
+												<?php	break;
 													default: break;
 											}
 										$j++;
 									endwhile;
-								else: ?><div class="alert-error"><? printf('This category has no posts.'); ?></div> <?
+								else: ?><div class="alert-error"><?php printf('This category has no posts.'); ?></div> <?php
 								endif;
 							?>
 						</div>
@@ -89,22 +90,22 @@
 							 				{
 							 					case 0: ?>
 							 						<div class="main-recent-post sevencol">
-							 							 <? the_post_thumbnail( 'bones-thumb-280' ); ?>
-							 							<a href="<? the_permalink() ?>"><? the_title() ?> </a>
-							 					   		<div class="excerpt-overlay"><? the_excerpt() ?></div>
+							 							 <?php the_post_thumbnail( 'bones-thumb-280' ); ?>
+							 							<a href="<?php the_permalink() ?>"><?php the_title() ?> </a>
+							 					   		<div class="excerpt-overlay"><?php the_excerpt() ?></div>
 							 						</div>
-							 					<? 	break;
+							 					<?php 	break;
 							 					   	case 1: ?>
 							 					   	<div class="second-recent-post fivecol text-right">
 							 					   		<span class="most-recent-ribbon2"></span>
-							 					   		<? 	the_post_thumbnail( 'bones-thumb-465'); ?>
+							 					   		<?php 	the_post_thumbnail( 'bones-thumb-465'); ?>
 							 					   	</div>
-							 					<?	break;
+							 					<?php	break;
 							 						default: printf('default state');
 							 				}
 							 			$i++;
 							 		endwhile;
-							 	else: ?><div class="alert-error"><? printf('This category has no posts.'); ?></div> <?
+							 	else: ?><div class="alert-error"><?php printf('This category has no posts.'); ?></div> <?php
 							 	endif;
 							?>
 						</div>
