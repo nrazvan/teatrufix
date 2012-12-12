@@ -1,0 +1,165 @@
+/*
+Theme Name: Black Theatre
+Theme URI: http://teatrufix.ro
+Description: Wordpress Theme developed by REEA.net for teatrufix.ro
+Version: 1.0
+
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+*/
+/*Table of contents:
+	1. Reset default browser styles
+	2. General styles
+	3. Header styles
+	4. Index page styles
+	5. Footer styles
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+/*Variables definition */
+
+/*General styles */
+body { 
+	font-family: Arial, sans-serif; 
+	margin: auto auto;
+	background: #000 url('assets/backgrounds/bg.png') no-repeat fixed top center;
+	color: white;
+}
+/*homepage category sqaure title */
+.homepage-category-title {
+	display: block;
+	width: 92px;
+	height: 81px;
+	border: 4px solid white;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	margin: auto auto;
+}
+.green {
+	background-color: #88ba2f ;
+}
+.orange {
+	background-color: #f0a402;
+}
+.blue {
+	background-color: #12b3e1;
+}
+
+/*homepage content */
+.main-content {
+	width: 804px;
+	margin: auto auto;
+}
+
+.homepage-category {
+	background: url('assets/backgrounds/line.png') no-repeat top center;
+}
+
+/* Footer styles - to design the footer of the theme */
+.footer-credits {
+	height:60px;
+	margin: auto auto;
+	padding-top: 60px;
+	background: url('assets/backgrounds/line.png') no-repeat top center;
+	font-size: 14px;
+}
+
+.footer-warning {
+	font-size: 10px;
+	margin: auto auto;
+}
+
+/*main navigation styles */
+.top-header {
+	height:44px;
+	margin-top: -28px;
+	background: url('assets/backgrounds/menu-bg.png');
+}
+
+#main-navigation {
+	width: 940px;
+	padding-top: 10px;
+	margin: auto auto;
+}
+#main-navigation a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+}
+#main-navigation li {
+	display: inline;
+	padding-right: 10px;
+}
+/*grey images */
+img {
+	filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+    filter: url(/assets/backgrounds/allisgrey.svg#desaturate); 
+    filter: gray;
+    -webkit-filter: grayscale(1); 
+}
+img:hover {
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%); 
+    -o-filter: grayscale(0%); 
+    filter: none;
+    -webkit-filter: grayscale(0); 
+}
+
+/*searchform */
+#searchform {
+	width: 270px;
+	height: 23px;
+}
